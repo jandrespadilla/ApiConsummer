@@ -27,18 +27,4 @@ Para instalar y configurar el proyecto, sigue estos pasos:
 ## Uso
 
 Aquí se muestra un ejemplo básico de cómo usar ApiConsummer:
-
-```python
-import apiconsummer
-
-# Crear una instancia de ApiConsummer
-api = apiconsummer.ApiConsummer(base_url='https://api.ejemplo.com')
-
-# Realizar una solicitud GET
-respuesta = api.get('/ruta')
-print(respuesta.json())
-
-# Realizar una solicitud POST
-datos = {'clave': 'valor'}
-respuesta = api.post('/ruta', json=datos)
-print(respuesta.json())
+### Endpoints - **Obtener todos los productos**: - **URL**: `http://localhost:8981/product/` - **Método**: `GET` - **Respuesta**: ```json [ { "id": 1, "nombre": "Curso de Java", "descripcion": "Curso de java para la creacion de API", "stock": 27, "precio": 120000.0 }, { "id": 2, "nombre": "Curso de PHP", "descripcion": "Curso de PHP con laravel para la creacion de API", "stock": 40, "precio": 150000.0 }, { "id": 3, "nombre": "Curso de Python", "descripcion": "Curso de Python con Dianjo para la creacion de API", "stock": 40, "precio": 130000.0 }, { "id": 4, "nombre": "Curso de HTML", "descripcion": "Curso de HTML con CSS usando Bootstrap", "stock": 36, "precio": 100000.0 }, { "id": 5, "nombre": "Curso de JavaScript", "descripcion": "Curso de JavaScript con JQuery", "stock": 39, "precio": 90000.0 } ] ``` ### Información adicional - **Base URL del API**: `http://localhost:8981/product/` - **Servidor de Product API**: `http://localhost:8981/` - **Modificación del puerto**: Si deseas modificar el puerto en el que corre el servidor, puedes hacerlo en el archivo `application.properties`
