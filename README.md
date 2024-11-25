@@ -26,7 +26,7 @@ Para instalar y configurar el proyecto, sigue estos pasos:
 
 ## Uso
 
-### Endpoints
+### Endpoints de ejemplo
 
 - **Obtener todos los productos**:
     - **URL**: `http://localhost:8981/product/`
